@@ -1,0 +1,15 @@
+Video Game players and inventory storage containers
+User Stories
+
+As a player I can
+    Login to my account(s)
+    View my invertory and gold
+    Store items and gold into a storage
+    Take out items or gold from storage
+    Trade items with another player
+    Sell items
+    But items
+
+As a game dev I can
+    Setup a new players inventory and storage container
+    manually take items and gold from player
