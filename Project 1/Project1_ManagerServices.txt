@@ -1,0 +1,46 @@
+Manager Services
+
+login/logout (app view)
+
+approve/deny request
+
+List <Request> reviewRequests(Manager m, Queue <Request> pendingRequests);
+//iterates queue
+//asks for manager input
+//pops pending request
+//pushes resovled requests into list
+//returns list of resolved request
+
+void viewPendingRequests(Manager m, Queue<Request> pendingRequests);
+//iterates queue
+//prints each item in queue
+//note: each request should have
+//employee, amount, status, date?, description (i.e. purpose)
+
+void viewResolvedRequests(Manager m, List<Request> resolvedRequests);
+//iterates list
+//prints each item in list
+
+void viewEmployees(Manager m, List<Employee> employees);
+//iterates list
+//prints each item on list
+
+
+void viewRequestsByEmployee(Manager m, Employee e, Queue<Request> pendingRequests, List <Request> resolvedRequest);
+//search pending requests
+//if requests matches employee
+//print request
+//search resolved requests
+//if request matches employee
+//print request
+//note: use lambda?
+
+Employee registerEmployee(Manager m, String employeeEmail, List<Employee> employees);
+//ask manager to enter empoyee username
+//ask manager to enter employee temp password
+//create new Employee(username, tempPassword)
+//send email with info
+//add new Employee to list of Employees
+//return new Employee
+
+NOTE: class/interface for input whether scanner, file, etc
