@@ -1,0 +1,8 @@
+Employee services:
+
+Employee login - The employee needs a username attached to thier first name and last name, needs a password, address, phone number, and email.
+Employee reimburstment request - The employee can make a reimbursement request. The employee needs itemized reciept. The accepted catagories are gas, lodging, food, and services to stay conecceted.
+Employee can view reimburstment request history - This lets the employee view the current pending reimburstment and finalized reimburstments. The finalized show which parts were award reimburstments and which were denied.
+Employee can view their information and update thier information - The employee can see and update first name, last name, password, address, phone number, and email. They can only view job title, salary, and PTO.
+Employee recives email - when reimburstment is resolved employee gets email about the request.
+
