@@ -8,7 +8,7 @@ CREATE table employees (
 	emp_type VARCHAR (50)
 );
 
-insert into employees values (default,'Alazar', 'hailemeskel', 'alazar@mail.com', 'alazar', 'alazar', null );
+insert into employees values (default,'alazar', 'hailemeskel', 'alazar@mail.com', 'alazar', 'alazar', null );
 insert into employees values (default, 'ah', 'ha', 'ah@mail.com', 'ah', 'ah123', 'manager' );
 
 CREATE Table reimbursements (
