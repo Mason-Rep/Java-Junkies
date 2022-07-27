@@ -1,0 +1,63 @@
+class RequestRepo{
+
+private ConnectionManager connManager;
+
+//constructor
+//getter and setter
+
+public ID insert(Request r);
+//init()
+//set emp_id (int), amount (float), start (timestamp), status (string), end (timestamp), description (string)
+SQL statement -> insert into requests (emp_id, amount, start, status, end, decsr) values (..., ..., ...);
+//exec()
+//return id
+
+public void delete(Request r);
+//init()
+//set emp_id, amount, start, status, end, descr
+SQL statement -> delete from requests where emp_id = __, amount = ___, ...);
+//exec()
+
+public void updateRequest(Request r, String status, Date end);
+//init()
+//set: status, end (timestamp)
+SQL statement -> update requests set status = ___, end = ___ where emp_id =__, amount = ___, ...);
+//exec()
+
+public List<Request> getByEmpID(ID emp_id);
+//init()
+//set: id (int)
+SQL statement -> select * from requests where emp_id=___;
+//exec()
+//get list of request from ResultSet
+//return list of requests
+
+public List<Request> getByStatus(String status);
+//init()
+//set: status (String)
+SQL statement -> select * from requests where status=____;
+//exec()
+//get list of requests form ResultSet
+//return list of requests
+
+public ID getID(Request r);
+//init()
+SQL statement -> select id from requests where emp_id=__, amount=__, ...; 
+//exec()
+//get id from result set
+//return id
+
+
+public PreparedStatement init(String sql);
+//get connection
+//set auto commit
+//prepare statement w/ sql string
+//return prepared statement
+
+
+public ResultSet exec(PreparedStatement);
+//execute query
+//close statement
+//close connection
+//return result set
+

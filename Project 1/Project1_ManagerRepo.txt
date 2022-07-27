@@ -1,0 +1,69 @@
+class ManagerRepo {
+
+private ConnectionManager connManager;
+
+//constructor
+//getter and setter
+
+public ID insert(Manager m);
+//inserts manager record and return id (int)
+//call init()
+//set string: firstname, lastname, email, username, password
+SQL statement -> insert into managers(firstname, lastname, email, username, "password") values (m.getFName(), m.getLName(), m.getEmail(), m.getUName(), m.getPassword())
+//call exec()
+//return id
+
+public void delete(Manager m);
+//deletes manager record by email 
+//call init()
+//set string: email
+SQL statement -> delete from managers where email = m.getEmail();
+//call exec()
+
+public void updateInfo(Manager m, String firstname, String lastname, String username);
+//updates manager record by email
+//manager can update firstname, lastname, username
+//call init()
+//set string: firstname, lastname, email, username
+SQL statment -> update managers set firstname=_firstname, lastname=_lastname, username=_username where email=m.getEmail();
+//call exec()
+
+public void updatePassword(Manager m, String password);
+//updates manager password by email
+//call init()
+//set string: password
+SQL statement -> update managers set password=_password where email=m.getEmail();
+//call exec()
+
+public Manager getByID(ID id);
+//gets manager record by id
+//init()
+//set: id (int)
+SQL statement -> select * from managers where id=m.getID()
+//exec()
+//get manager data members from result set
+//return new Manager
+
+pubic ID getID(Manager m);
+//gets manager id by manager email
+//init()
+//set: email (string)
+SQL statement -> select id from managers where email=m.getEmail()
+//exec()
+//get id from result set
+//return id
+
+public PreparedStatement init(String sql);
+//get connection
+//set auto commit
+//prepare statement w/ sql string
+//return prepared statement
+
+public ResultSet exec(PreparedStatement);
+//execute query
+//close statement
+//close connection
+//return result set
+
+
+
