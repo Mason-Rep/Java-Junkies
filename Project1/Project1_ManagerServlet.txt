@@ -1,0 +1,57 @@
+public class ManagerServlet extends HttpSevlet{
+
+private Logger log = Logger.getLogger();
+
+private ManagerService manService;
+private EmployeeRepository empRepo;
+
+public ManagerServlet(ManagerService manService){
+	this.manService = manService;
+	empRepo = new EmployeeRepository();
+}
+
+//login and logout
+
+
+//METHOD: review request
+//get http request to review particular reimb request
+//get reimb request object from http req
+//get status input from http request
+//call man. service function reviewRequest()
+//call req. repo function updateRequest()
+//log information
+//return updated reimb request as a http response
+
+
+//METHOD: view pending req
+//get http request to view pending reimb reqs
+//call req. repo functon getAll()
+//call man. service fucntion viewPending()
+//return list of pending reimb req as a http response
+
+
+//METHOD: view resolved req
+//get http request to view resolved reimb reqs
+//call req. repo functon getAll()
+//call man. service fucntion viewResolved()
+//return list of resolved reimb req as a http response
+
+//METHOD: view employees
+//get http request to view employees
+//call emp. repo functon getAll()
+//call man. service fucntion viewEmployees()
+//return list of employees as a http response
+
+//METHOD: view requests from employee
+//get http request to view reimb requests from particular employee
+//get employee object from http req
+//call emp. repo function getAll()
+//call man. service function viewRequestByEmployee()
+//return list of reimb requests as a http response
+
+
+//METHOD: register employee (optional)
+
+
+
+
