@@ -1,0 +1,9 @@
+Java Junkies Project 2
+Restaurant Review Application
+- searches for restaurants in an area
+- provides reviews for the listed restaurants
+- compares ratings from different review sites (yelp, google, etc.)
+- users can make reservations at listed restaurants
+- users can write reviews
+- users can favorite restaurants
+- integrates google maps and yelp
