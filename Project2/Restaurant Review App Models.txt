@@ -1,0 +1,69 @@
+User
+-username
+-password
+-email
+-list of fav restauraunts
+-list of reservations
+list of reviews?
+
+-view neary restaurants
+-write reviews (rating out of 5 stars + written comment)
+-favorite restaurants
+-request a reservation
+
+Admin
+-username
+-password
+-email
+-associated restaurant
+
+-edit restaurant info
+-resovle reservation
+
+Location
+street address
+city
+state
+zip code
+
+
+Restaurant
+-restaraunt name
+-food category (enum of food categories)
+-location
+-reservations?
+-business hours
+-menu? (link?)
+-health score?
+-business phone/email/website
+-offers take out, delivery, indoor/outdoor dining?(
+
+Restaurant Page
+-restaurant
+-avg ratign (out of 5 stars)
+-list of reviews
+
+
+Review
+-rating out of five stars
+-user
+-restuatrant
+-date posted
+-description
+
+
+Reservations
+-date
+-time
+-status
+-restaurant
+-# of participants
+-person making request
+--send email when resolved
+
+one restauraunt to many reservation
+one restuarant to many reiviews
+many users to many reviews
+one user to many restaurants
+one user to many reservations
+
